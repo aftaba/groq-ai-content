@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Groq AI Content",
+  "name": "wordpress/groq-ai-content",
+  "version": "0.1.0",
+  "category": "text",
+  "icon": "editor-help",
+  "description": "Generate and Summarise Content via Groq AI",
+  "attributes": {
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "blockText": {
+      "type": "string",
+      "default": "Welcome to Groq AI Content Generator"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": [
+      "left",
+      "right",
+      "center"
+    ],
+    "color": {
+      "gradients": true,
+      "link": true,
+      "__experimentalDefaultControls": {
+        "background": true,
+        "text": true
+      }
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "__experimentalDefaultControls": {
+        "margin": false,
+        "padding": false
+      }
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true,
+      "__experimentalFontFamily": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalLetterSpacing": true,
+      "__experimentalTextTransform": true,
+      "__experimentalWritingMode": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    }
+  },
+  "textdomain": "groq-ai-content",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php",
+  "viewScript": "file:./view.js"
+}
